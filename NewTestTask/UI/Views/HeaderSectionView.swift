@@ -14,7 +14,7 @@ class HeaderSectionView: UIView {
         let lbl = UILabel()
         lbl.numberOfLines = 0
         lbl.textColor = .black
-        lbl.font = UIFont.systemFont(ofSize: 17)
+        lbl.font = UIFont.systemFont(ofSize: 13)
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()

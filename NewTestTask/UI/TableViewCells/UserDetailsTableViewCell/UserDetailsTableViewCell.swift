@@ -23,6 +23,10 @@ class UserDetailsTableViewCell: UITableViewCell {
             if detail.isDiclosureIndicator {
                 accessoryType = .disclosureIndicator
             }
+            
+            if detail.leftLabel == "Features" {
+                rightLabel.textColor = .blue
+            }
         }
     }
     
@@ -30,5 +34,11 @@ class UserDetailsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         selectionStyle = .none
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        rightLabel.textColor = .black
     }
 }

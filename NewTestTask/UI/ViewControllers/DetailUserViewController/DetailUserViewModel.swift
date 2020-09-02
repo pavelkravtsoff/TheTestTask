@@ -37,8 +37,7 @@ class DetailUserViewModel {
             [UserCell(leftLabel: "Trim", rightLabel: user.trim, isDiclosureIndicator: true),
              UserCell(leftLabel: "Features", rightLabel: "Add Features", isDiclosureIndicator: true),
              UserCell(leftLabel: "Transmission", rightLabel: user.transmission, isDiclosureIndicator: true),
-             UserCell(leftLabel: "Transmission", rightLabel: user.transmission, isDiclosureIndicator: true),
-             UserCell(leftLabel: "Mileage", rightLabel: "\(user.mileage)", isDiclosureIndicator: false),
+             UserCell(leftLabel: "Mileage", rightLabel: "\(user.mileage) miles", isDiclosureIndicator: false),
              UserCell(leftLabel: "Zip Code", rightLabel: user.addresses[0].zipcode, isDiclosureIndicator: true)
             ],
             lastArray
